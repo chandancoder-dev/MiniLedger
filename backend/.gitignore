@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+backend/.env
+mobile/.env
+
+# Compiled output
+backend/dist/
+
+# Expo generated files
+mobile/.expo/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
