@@ -3,12 +3,14 @@ import express from "express";
 import cors from "cors";
 import { pool } from "./config/database.js";
 import authRouter from "./routes/auth.routes.js";
+import loanRouter from "./routes/loan.routes.js";
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRouter);
+app.use("/api/loans", loanRouter);
 
 app.get("/", (_req, res) => {
   res.json({
